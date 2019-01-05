@@ -1,1 +1,1 @@
-# dailyroutinegame
+# dailyroutinegame-server
