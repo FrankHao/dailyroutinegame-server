@@ -25,7 +25,7 @@ SECRET_KEY = 'paov$^+d5hjt)ar#f+_1^9*aom)6vup!0k6wmy+9htwjg-khrw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.1.2']
 
 
 # Application definition
@@ -63,6 +63,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'dailyroutinegame.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}
 
 TEMPLATES = [
     {
